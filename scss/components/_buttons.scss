@@ -1,0 +1,92 @@
+/*******************************************
+****** Buttons
+*******************************************/
+.btn {
+  @apply bg-muted px-6 py-2.5 text-muted-alt rounded-md;
+
+  &.btn-primary {
+    @apply bg-primary text-primary-alt;
+
+    &:hover { @apply bg-primary/90; }
+
+    &.btn-light {
+      @apply bg-primary/10 text-primary;
+      &:hover { @apply bg-primary/20 }
+    }
+  }
+
+  &.btn-secondary {
+    @apply bg-secondary text-secondary-alt;
+    &:hover { @apply bg-secondary/90; }
+
+    &.btn-light {
+      @apply bg-secondary/10 text-secondary;
+      &:hover { @apply bg-secondary/20 }
+    }
+  }
+
+  &.btn-muted {
+    @apply bg-muted text-muted-alt;
+    &:hover { @apply bg-muted/90; }
+
+    &.btn-light {
+      @apply bg-muted/10 text-muted;
+      &:hover { @apply bg-muted/20 }
+    }
+  }
+
+  &.btn-disabled {
+    @apply bg-muted/50 text-muted-alt;
+    &:hover { @apply cursor-not-allowed; }
+
+    &.btn-light {
+      @apply bg-muted/10 text-muted/50;
+      &:hover { @apply bg-muted/20 }
+    }
+  }
+
+  &.btn-link {
+    @apply bg-transparent text-link;
+    &:hover { @apply underline }
+  }
+
+  &.btn-processing {
+    @apply relative text-transparent bg-transparent cursor-not-allowed;
+
+    &.btn-light {
+      @apply text-transparent bg-transparent;
+    }
+
+    &:after {
+      content: '';
+      box-sizing: border-box;
+      border-radius: 50%;
+      @apply absolute animate-spin border-4 border-primary/20 border-t-primary w-5 h-5 -ml-2.5 -mt-2.5 top-1/2 left-1/2;
+    }
+
+    &.btn-primary {
+      @apply text-transparent bg-transparent;
+      &:after { @apply border-primary/20 border-t-primary; }
+    }
+
+    &.btn-secondary {
+      &:after { @apply border-secondary/20 border-t-secondary; }
+    }
+
+    &.btn-muted {
+      &:after { @apply border-muted/20 border-t-muted; }
+    }
+
+    &.btn-link {
+      &:after { @apply border-link/20 border-t-link; }
+    }
+  }
+
+  &.btn-sm {
+    @apply px-4 py-1 rounded;
+
+    &:after {
+      @apply w-4 h-4 -ml-2 -mt-2 border-2;
+    }
+  }
+}

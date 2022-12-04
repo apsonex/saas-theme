@@ -11,9 +11,11 @@ const rootPath = import.meta.url.toString().replace('file://', '').replace('/vit
 const aliases = [
     //{find: 'vue$', replacement: 'vue/dist/vue.runtime.esm.js'},
     {find: /~(.+)/, replacement: resolve(rootPath, './node_modules/$1')},
+    {find: /@scss\//, replacement: resolve(rootPath, './scss') + '/'},
     {find: /@\//, replacement: resolve(rootPath, './js') + '/'},
     {find: /@common\//, replacement: resolve(rootPath, './js/Theme/Common') + '/'},
-    {find: /@scss\//, replacement: resolve(rootPath, './scss') + '/'},
+    {find: /@themeBasicUi\//, replacement: resolve(rootPath, './js/Theme/BasicUi') + '/'},
+    {find: /@themeLib\//, replacement: resolve(rootPath, './js/Theme/Lib') + '/'},
     //{find: '@sass', replacement: resolve(rootPath, './resources/sass') + '/'},
 ];
 

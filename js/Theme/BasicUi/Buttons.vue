@@ -26,6 +26,19 @@ const buttons = [
   <div class="p-4 space-y-10 pb-24">
 
     <div class="">
+      <Heading>Default Button</Heading>
+
+      <div class="grid grid-cols-4 gap-6 mt-4">
+        <div class="">
+          <pre class="text-xs">.btn</pre>
+          <button @click.prevent type="button" class="btn">
+            Button
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="">
       <Heading>Buttons</Heading>
 
       <div class="grid grid-cols-4 gap-6 mt-4">

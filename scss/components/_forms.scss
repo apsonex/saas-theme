@@ -1,0 +1,20 @@
+/*******************************************
+****** Forms
+*******************************************/
+
+.label {
+    @apply text-input-label text-sm mb-1;
+}
+
+.input {
+    @apply px-3 py-2.5 text-sm rounded-lg w-full;
+    @apply text-input-text bg-input-bg border border-input-border;
+
+    &::placeholder {
+        @apply text-input-placeholder italic;
+    }
+
+    &:focus {
+        @apply outline-none ring-0 border-input-border-focus text-input-text-focus;
+    }
+}

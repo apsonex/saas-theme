@@ -1,36 +1,40 @@
 {
-  "name": "web-components",
-  "version": "1.0.0",
-  "description": "",
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/web-components-lib.umd.js",
-  "module": "./dist/web-components-lib.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/web-components-lib.es.js",
-      "require": "./dist/web-components-lib.umd.js"
+    "name": "saas-theme",
+    "version": "1.0.0",
+    "description": "",
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/saas-theme-lib.umd.js",
+    "module": "./dist/saas-theme-lib.es.js",
+    "exports": {
+        ".": {
+            "import": "./dist/saas-theme-lib.es.js",
+            "require": "./dist/saas-theme-lib.umd.js"
+        }
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview --port 5050"
+    },
+    "keywords": [],
+    "license": "ISC",
+    "devDependencies": {
+        "@tailwindcss/aspect-ratio": "^0.4.2",
+        "@tailwindcss/forms": "^0.5.3",
+        "@tailwindcss/line-clamp": "^0.4.2",
+        "@tailwindcss/typography": "^0.5.8",
+        "@types/node": "^18.11.9",
+        "@vitejs/plugin-vue": "^3.2.0",
+        "autoprefixer": "^10.4.13",
+        "lodash": "^4.17.21",
+        "nanoid": "^4.0.0",
+        "postcss": "^8.4.19",
+        "sass": "^1.56.1",
+        "tailwindcss": "^3.2.4",
+        "typescript": "^4.9.3",
+        "vite": "^3.2.3",
+        "vue": "^3.2.45"
     }
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview --port 5050"
-  },
-  "keywords": [],
-  "license": "ISC",
-  "devDependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/forms": "^0.5.3",
-    "@tailwindcss/line-clamp": "^0.4.2",
-    "@tailwindcss/typography": "^0.5.7",
-    "@vitejs/plugin-vue": "^3.2.0",
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.18",
-    "sass": "^1.55.0",
-    "tailwindcss": "^3.2.1",
-    "vite": "^3.2.1",
-    "vue": "^3.2.41"
-  }
 }

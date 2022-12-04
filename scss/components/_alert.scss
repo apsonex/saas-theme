@@ -1,0 +1,42 @@
+/*******************************************
+****** Alerts
+*******************************************/
+.alert {
+  @apply px-4 py-2.5 bg-primary text-primary-alt rounded-lg shadow-md shadow-primary/20;
+
+  &.alert-light {
+    @apply bg-primary/10 text-primary;
+  }
+
+  &-success {
+    @apply bg-success text-success-alt shadow-success/20;
+
+    &.alert-light {
+      @apply bg-success/10 text-success;
+    }
+  }
+
+  &-error {
+    @apply bg-error text-error-alt shadow-error/20;
+
+    &.alert-light {
+      @apply bg-error/10 text-error;
+    }
+  }
+
+  &-info {
+    @apply bg-info text-error-alt shadow-info/20;
+
+    &.alert-light {
+      @apply bg-info/10 text-info;
+    }
+  }
+
+  &-warning {
+    @apply bg-warning text-error-alt shadow-warning/20;
+
+    &.alert-light {
+      @apply bg-warning/10 text-warning;
+    }
+  }
+}

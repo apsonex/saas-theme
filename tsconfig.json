@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "lib": ["es6", "dom", "es2017"],
+        "target": "ES6",
+        "typeRoots": [
+            "types",
+            "node_modules/@types"
+        ],
+        "moduleResolution": "Node",
+        //"esModuleInterop": true
+    }
+}

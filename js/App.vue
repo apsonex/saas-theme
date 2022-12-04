@@ -1,5 +1,5 @@
 <script setup>
-import WebComponents from "./Theme/Theme.vue";
+import Theme from "./Theme/Theme.vue";
 
 </script>
 

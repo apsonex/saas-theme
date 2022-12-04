@@ -33,6 +33,7 @@ module.exports = {
                 'heading': 'rgb(var(--heading) / <alpha-value>)',
                 'link': 'rgb(var(--link) / <alpha-value>)',
                 // Forms
+                'input-label': 'rgb(var(--input-label) / <alpha-value>)',
                 'input-placeholder': 'rgb(var(--input-placeholder) / <alpha-value>)',
                 'input-text': 'rgb(var(--input-text) / <alpha-value>)',
                 'input-bg': 'rgb(var(--input-bg) / <alpha-value>)',

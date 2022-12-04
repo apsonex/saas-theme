@@ -1,20 +1,20 @@
 <script setup>
-import {reactive, ref} from "vue";
+import {reactive, ref, shallowReactive, shallowRef} from "vue";
 import BasicUi_Text from "./BasicUi/Text.vue";
 import BasicUi_Alert from "./BasicUi/Alert.vue";
 import BasicUi_Buttons from "./BasicUi/Buttons.vue";
 import BasicUi_FormInputs from "./BasicUi/FormInputs.vue";
 
-const currentMenu = ref(BasicUi_FormInputs)
+const currentMenu = shallowRef(BasicUi_Alert)
 
-const pages = reactive({
+const pages = {
   'Base UI': {
     Alert: BasicUi_Alert,
     Text: BasicUi_Text,
     Buttons: BasicUi_Buttons,
     'Form Inputs': BasicUi_FormInputs,
   }
-})
+}
 
 </script>
 
